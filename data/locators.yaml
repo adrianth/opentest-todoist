@@ -1,0 +1,7 @@
+homepage:
+  emailInput: { id: email }
+  firstIframe: { name: GB_frame }
+  loginButton: { css: "#login_form a.submit_btn" }
+  loginMenu: { css: "a[href='/Users/showLogin']" }
+  passwordInput: { id: password }
+  secondIframe: { id: GB_frame }
