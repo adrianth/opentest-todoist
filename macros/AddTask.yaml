@@ -1,0 +1,22 @@
+description: Add task
+actions:
+  - description: Click the Today sidebar menu
+    action: org.getopentest.selenium.Click
+    args:
+      locator: { xpath: "//ul[@id='top_filters']//span[text()='Today']" }
+
+  - description: Click the Today sidebar menu
+    action: org.getopentest.selenium.Click
+    args:
+      locator: { css: li.agenda_add_task a }
+      
+  - description: Type task subject
+    action: org.getopentest.selenium.SendKeys
+    args:
+      locator: { css: ul.ul_today div.richtext_editor }
+      text: My first todo item
+
+  - description: Click the Add task button
+    action: org.getopentest.selenium.Click
+    args:
+      locator: { css: table.td_submit_area a.submit_btn }

@@ -1,0 +1,18 @@
+description: Add task to the Today section
+actions:
+  - description: Right-click the task subject
+    action: org.getopentest.selenium.ActionsContextClick
+    args:
+      locator: { xpath: "//ul[contains(@class,'ul_today')]//*[text()='My first todo item']" }
+
+  - action: org.getopentest.selenium.ActionsPerform
+
+  - description: Click the Today sidebar menu
+    action: org.getopentest.selenium.Click
+    args:
+      locator: { xpath: "(//td[@data-track='task|more_delete'])[2]" }
+  
+  - description: Click the Today sidebar menu
+    action: org.getopentest.selenium.Click
+    args:
+      locator: { xpath: "//div[contains(@class,'alert_holder')]//span[text()='Delete']" }

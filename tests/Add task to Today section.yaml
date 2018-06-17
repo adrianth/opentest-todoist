@@ -1,0 +1,14 @@
+description: Add task to the Today section
+actors:
+  - actor: WEB
+    segments:
+      - segment: 1
+        actions:
+          - macro: Login
+            args:
+              username: $data("config").username
+              password: $data("config").password
+
+          - macro: AddTask
+          
+          - macro: DeleteTask
