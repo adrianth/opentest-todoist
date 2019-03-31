@@ -1,0 +1,5 @@
+description: Smoke tests
+sessionLabel: Smoke tests
+tests:
+    - name: Add task to Today section
+      path: .
